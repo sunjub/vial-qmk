@@ -1,10 +1,10 @@
 #include QMK_KEYBOARD_H
 
-#include "rp2040_split_v0_1.h"
+// #include "rp2040_split_v0_1.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        KC_SCRL, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,    KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_0,
+        KC_0,    KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,    KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_0,
         KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_ESC,    KC_DEL,  KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSLS,
         KC_TAB,  KC_Q,    KC_D,    KC_R,    KC_W,    KC_B,    KC_LBRC,   KC_RBRC, KC_J,    KC_F,    KC_U,    KC_P,    KC_SCLN, KC_EQL,
         KC_LCTL, KC_A,    KC_S,    KC_H,    KC_T,    KC_G,    KC_F22,    KC_F3,   KC_Y,    KC_N,    KC_E,    KC_O,    KC_I,    KC_BSPC,
@@ -63,15 +63,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 # define LOCK_COLOR_1 HSV_RED
 
 const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-  {3,  1, LOCK_COLOR_1}
+  {3, 1, LOCK_COLOR_1}
 );
 
 const rgblight_segment_t PROGMEM my_numlock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-  {4,  1, LOCK_COLOR_1}
+  {4, 1, LOCK_COLOR_1}
 );
 
 const rgblight_segment_t PROGMEM my_scrolllock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
-  {5,  1, LOCK_COLOR_1}
+  {5, 1, LOCK_COLOR_1}
 );
 
 const rgblight_segment_t PROGMEM my_layer1_layer[] = RGBLIGHT_LAYER_SEGMENTS(

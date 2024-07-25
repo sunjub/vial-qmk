@@ -1,6 +1,6 @@
 {
     "manufacturer": "sunjub",
-    "keyboard_name": "ErgoSplit_82RP",
+    "keyboard_name": "split_test",
     "url": "",
     "maintainer": "sunjub",
     "processor": "RP2040",
